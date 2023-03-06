@@ -1,0 +1,24 @@
+h1 {
+    color:grey
+}
+p {
+    font-size:large
+}
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+div#content {
+    padding: 30px;
+}
+/* you can also use "min-width" or a combination of both: */
+/* @media only screen and (max-width: 800px) and (min-width: 400px)  */
+@media only screen and (max-width: 800px) {
+  /* padding only if screen is 800px or smaller */
+  /* this has a higher precedence and wins the default padding when */
+  /* the condition is met */
+  div#content {
+    padding: 10px;
+  }
+}
