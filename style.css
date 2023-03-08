@@ -4,6 +4,9 @@ h1 {
 p {
     font-size:large
 }
+ul {
+  list-style-type: none;
+}
 section {
   display: flex;
   flex-direction: column;
