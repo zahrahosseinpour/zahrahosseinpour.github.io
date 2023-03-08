@@ -26,6 +26,7 @@ section1 {
 section {
   display: flex;
   flex-direction: column;
+}
 div#content {
     padding: 30px;
 }
