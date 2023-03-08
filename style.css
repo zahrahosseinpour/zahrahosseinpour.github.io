@@ -17,11 +17,10 @@ div {
 section1 {
   display: flex;
   padding: 10px;
-  flex: 0 0 10px;
   flex-direction: row;
   align-items: space-between;
   justify-content: center;
-  background:white
+  
 }
 section {
   display: flex;
