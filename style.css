@@ -7,14 +7,14 @@ p {
 ul {
   list-style-type: none;
 }
-div {
+section div {
   background-color: lightgrey;
   margin: 5px;
   padding: 10px;
   border: 0.5px solid black;
   color: white;
 }
-section1 {
+section {
   display: flex;
   padding: 10px;
   flex-direction: row;
@@ -22,10 +22,21 @@ section1 {
   justify-content: center;
   
 }
-section {
-  display: flex;
-  flex-direction: column;
+#main-container {
+    display: flex;
 }
+img {
+height: 400px;
+}
+#right {
+    padding: 40px;
+}
+#left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 div#content {
     padding: 30px;
 }
@@ -35,25 +46,17 @@ div#content {
   /* padding only if screen is 800px or smaller */
   /* this has a higher precedence and wins the default padding when */
   /* the condition is met */
-  div#content {
-    padding: 10px;
+  #main-container {
+    flex-direction: column;
   }
-  body {
-    background-color: pink;
   
-    style="font-size:10vw"
-  }
 }
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
   [class*="col-"] {
     width: 100%;
-    style="font-size:10vw"
   }
 }
 @media only screen and (max-width: 600px) {
-  body {
-    background-color: lightblue;
-    style="font-size:10vw"
-  }
+  
 }
